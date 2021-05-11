@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  height: 100%;
   font-family: "Itim", cursive;
+}
+#container {
+  min-height: 100%;
 }
 
 #navbar {
@@ -30,7 +35,25 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 }
 #showcase {
   margin-top: 150px;
+}
+
+#footer {
+  width: 100vw;
+  height: 30px;
+  position: relative;
+  background-color: aqua;
+  text-align: center;
+  margin-top: -30px;
+  clear: both;
+  padding-top: 5px;
+}
+
+a:link,
+a:visited {
+  color: darkorchid;
+  text-decoration: none;
 }
