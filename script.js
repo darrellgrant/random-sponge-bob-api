@@ -1,3 +1,9 @@
+let button = document.querySelector("#button");
+button.addEventListener("click", function () {
+  location.reload();
+});
+let showcase = document.querySelector("#showcase");
+
 let request = new XMLHttpRequest();
 request.open(
   "GET",
@@ -9,7 +15,7 @@ request.onload = function () {
   console.log(parsedData);
   let originalUrl = parsedData.data.images.original.url;
   console.log(originalUrl);
-  let showcase = document.querySelector("#showcase");
+
   let gif = document.createElement("img");
   gif.setAttribute("src", originalUrl);
   showcase.appendChild(gif);
