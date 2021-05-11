@@ -1,4 +1,5 @@
 # Random Sponge Bob
 
-An API built on the GYPHY API You probably have better things to do than get
-random Sponge Bob GIFs Or do you?
+A webpage featuring random Spong Bob gifs\
+Built using the GYPHY API\
+[Live Demo](random-spongebob.darrellgrant.net)
