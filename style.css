@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Itim", cursive;
+}
+
+#navbar {
+  width: 100vw;
+  height: 30px;
+  margin: 0 auto;
+  background-color: aqua;
+  text-align: center;
+}
