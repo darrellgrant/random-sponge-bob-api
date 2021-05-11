@@ -1,17 +1,17 @@
-var request = new XMLHttpRequest();
+let request = new XMLHttpRequest();
 request.open(
   "GET",
   "https://api.giphy.com/v1/gifs/random?api_key=3FZm8c2tZqF58iHHVYXNjUAIIKfLXOxU&tag=spongebob&rating=g"
 );
 request.onload = function () {
-  var response = request.response;
-  var parsedData = JSON.parse(response);
+  let response = request.response;
+  let parsedData = JSON.parse(response);
   console.log(parsedData);
-  var originalUrl = parsedData.data.images.original.url;
+  let originalUrl = parsedData.data.images.original.url;
   console.log(originalUrl);
-
-  var gif = document.createElement("img");
+  let showcase = document.querySelector("#showcase");
+  let gif = document.createElement("img");
   gif.setAttribute("src", originalUrl);
-  document.body.appendChild(gif);
+  showcase.appendChild(gif);
 };
 request.send();

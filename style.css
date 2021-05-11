@@ -25,3 +25,12 @@ button {
   margin: 20px;
   font-size: 1rem;
 }
+
+#parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#showcase {
+  margin-top: 150px;
+}
